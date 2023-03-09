@@ -1,7 +1,3 @@
-import flask
-import boto3
-
-
 def get_upload_id(client, file_name: str) -> str:
     """
     Create a multipart upload

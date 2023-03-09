@@ -1,16 +1,16 @@
 import flask
 import boto3
-import os
 
 import util
+import config
 
 app = flask.Flask(__name__)
 
 # Initialize S3-like client
 client = boto3.client('s3',
-                      endpoint_url=os.getenv('S3_ENDPOINT_URL'),
-                      aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID'),
-                      aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY'))
+                      endpoint_url=config.S3_ENDPOINT_URL,
+                      aws_access_key_id=config.AWS_ACCESS_KEY_ID,
+                      aws_secret_access_key=config.AWS_SECRET_ACCESS_KEY)
 
 
 @app.route('/upload', methods=['POST'])
