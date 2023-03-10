@@ -41,12 +41,12 @@ Specify the criticality as a number from 0 (not critical) to 5 (simple leads to 
 > Criticality: 1
 ## Authors
 
-| Role   | FIO            | Post             | email                                                       | Телефон |
-|--------|----------------|------------------|-------------------------------------------------------------|---------|
-| Master | Shatekov Sabyr | Python Developer | [shatekov.sabyr@gmail.com](mailto:shatekov.sabyr@gmail.com) |         |
-|        |                |                  |                                                             |         |
-|        |                |                  |                                                             |         |
-|        |                |                  |                                                             |         |
+| Role   | FIO            | Post             | email                                                       | Phone |
+|--------|----------------|------------------|-------------------------------------------------------------|-------|
+| Master | Shatekov Sabyr | Python Developer | [shatekov.sabyr@gmail.com](mailto:shatekov.sabyr@gmail.com) |       |
+|        |                |                  |                                                             |       |
+|        |                |                  |                                                             |       |
+|        |                |                  |                                                             |       |
 
 ## Dependencies
 
@@ -60,5 +60,5 @@ Specify the criticality as a number from 0 (not critical) to 5 (simple leads to 
 |        |       |
 
 
-### Язык программирования:
+### Programming language:
 *Python 3.9*
