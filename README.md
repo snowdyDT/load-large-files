@@ -55,9 +55,11 @@ Specify the criticality as a number from 0 (not critical) to 5 (simple leads to 
 
 ## Technology accounts
 
-| System | Title |
-|--------|-------|
-|        |       |
+| System | Title                   |
+|--------|-------------------------|
+| S3     | <S3_ENDPOINT_URL>       |
+| AWS    | <AWS_ACCESS_KEY_ID>     |
+| AWS    | <AWS_SECRET_ACCESS_KEY> |
 
 
 ### Programming language:
