@@ -20,22 +20,17 @@ def upload_file():
 
 @app.route('/', methods=['POST'])
 def upload_file_post():
-    print("Get the file from request")
     file = flask.request.files['file']
 
     file_name = file.filename
-    print(f"File name from request: {file_name}")
 
     # Create a multipart upload
-    print("Create a multipart upload")
     upload_id = util.get_upload_id(client=client, file_name=file_name)
 
     # Divide the file into parts and upload them in parallel
-    print("Divide the file into parts and upload them in parallel")
     parts = util.get_parts_file(file=file, client=client, file_name=file_name, upload_id=upload_id)
 
     # Complete the multipart upload
-    print("Complete the multipart upload")
     util.multipart_upload(client=client, file_name=file_name, upload_id=upload_id, parts=parts)
 
     return 'File uploaded successfully'

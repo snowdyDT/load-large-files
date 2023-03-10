@@ -13,6 +13,23 @@ On the front, selecting a file and sending it to the endpoint implemented on the
 Uploading via a presigned url is NOT counted as a solution to the problem.
 The file must pass through backend applications.
 
+## Solution:
+
+Steps to solving problems:
+1) Implemented a backend endpoint that receives data from the external interface and loads it into S3. This part is implemented using the Flask web framework.
+2) A streaming approach is used to upload a large file into multiple streams, which provides faster downloads.
+3) Split the file into several parts and load them in parallel using the Python's multiprocessing module.
+4) Once the file is uploaded, assemble the parts into a complete file and upload it to S3 using the backend endpoint.
+
+
+## How to run the code:
+1) Use the Python's keyring library to write your data for S3 service (config.py).
+2) Install all the libraries that are specified in the file requirements.txt
+3) Run the flask app in app.py
+4) Open the service and upload the file.
+5) Get the status of S3 bucket.
+
+<br>
 
 <!-- 
 Below, separated by commas, enter the tags of the service (adjectives in the masculine gender), for example: selenium, RASA
